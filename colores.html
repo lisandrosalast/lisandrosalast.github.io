@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Calculadora de colores</title>
+        <link rel="stylesheet" href="./css/estilo.css" type="text/css" media="all" />
+    </head>
+    <body>
+    <div class="general"><center>
+        <div id="hexadecimal" class="a100">
+            <h2>Colores en Hexadecimal</h2>
+            <input type="text" id="hex1" value="00" onchange="calcular_decimal()"> <input type="text" id="hex2" value="00" onchange="calcular_decimal()"> <input type="text" id="hex3" value="00" onchange="calcular_decimal()">
+        </div>
+        <div id="decimal" class="a100">
+            <h2>Colores en Decimal (RGB)</h2>
+            <input type="text" id="dec1" value="0" onchange="calcular_hexadecimal()"> <input type="text" id="dec2" value="0" onchange="calcular_hexadecimal()"> <input type="text" id="dec3" value="0" onchange="calcular_hexadecimal()">
+        </div>
+        <div id="fondo" class="a100" style="margin-top:15px; height:200px"></div>
+        <style id="color_fondo">#fondo{background:#000000}</style>
+        <script src="./js/calculadora_color.js"></script>
+    </center></div>
+    </body>
+</html>
